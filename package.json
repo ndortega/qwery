@@ -1,5 +1,5 @@
 {
-  "name": "search-visualizer",
+  "name": "qwery",
   "version": "1.0.0",
   "description": "This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ndortega/search-visualizer.git"
+    "url": "git+https://github.com/ndortega/qwery.git"
   },
   "author": "Nathan Ortega",
   "license": "BSD3",
   "bugs": {
-    "url": "https://github.com/ndortega/search-visualizer/issues"
+    "url": "https://github.com/ndortega/qwery.git/issues"
   },
-  "homepage": "https://github.com/ndortega/search-visualizer#readme",
+  "homepage": "https://github.com/ndortega/qwery#readme",
   "dependencies": {
     "node-sass-chokidar": "^1.3.4"
   }
