@@ -21,7 +21,8 @@ header = div []
     , ul []
         [ viewLink "/" 
         , viewLink "/about"
-        , viewLink "/info"]
+        , viewLink "/info"
+        ]
     ]
 
 footer: Html msg
@@ -33,11 +34,12 @@ template: Html msg -> List (Html msg)
 template content =
     [ header
     , content
-    , footer]
+    , footer
+    ]
 
 viewLink : String -> Html msg
 viewLink path =
     li [] 
         [ a [ href path ] [ text path ] 
-    ]
+        ]
      

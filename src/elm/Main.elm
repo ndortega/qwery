@@ -80,6 +80,9 @@ view model =
         Router.About ->
             viewAboutPage model
 
+        Router.Info -> 
+            viewInfoPage model
+
         Router.NotFound -> 
             viewNotFound model
         
@@ -89,21 +92,42 @@ view model =
 viewHomePage: Model -> Page msg
 viewHomePage model = 
     buildPage "Home Page"
-        (template (div [] 
-            [ p [] [ text "Homepage" ] ]))
+        (template (
+            div [] 
+                [ p [] [ text "Homepage" ] 
+                ]
+            )
+        )
 
 
 
 viewAboutPage: Model -> Page msg
 viewAboutPage model =
     buildPage "About"
-        (template (div []
-            [ p [] [ text "About Page" ] ]))
+       (template (
+            div [] 
+                [ p [] [ text "About Page" ] 
+                ]
+            )
+        )
 
 
+viewInfoPage: Model -> Page msg
+viewInfoPage model = 
+    buildPage "Info"
+       (template (
+            div [] 
+                [ p [] [ text "Info Page" ] 
+                ]
+            )
+        )
 
 viewNotFound: Model -> Page msg
 viewNotFound model = 
     buildPage "Not Found"
-        (template (div []
-            [ p [] [ text "Not Found" ] ]))
+       (template (
+            div [] 
+                [ p [] [ text "Page Doesn't Exist" ] 
+                ]
+            )
+        )
