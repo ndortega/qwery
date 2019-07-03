@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "elm-app start",
+    "install": "elm-app install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
