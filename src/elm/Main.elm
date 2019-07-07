@@ -1,12 +1,15 @@
 module Main exposing (..)
 import Browser
 import Browser.Navigation as Nav
-import Html exposing (..)
+import Html exposing (div,p,text)
 import Html.Attributes exposing(..)
 import Url
 import Router exposing(Route(..), routeParser, fromUrl)
 
-import AppModel exposing (Model)
+import Json.Decode as Decode exposing (Decoder, decodeString, float, int, nullable, string)
+import Json.Decode.Pipeline exposing (required, optional, hardcoded)
+
+import AppModel exposing (..)
 import PageBuilder exposing (..)
 
 -- MAIN

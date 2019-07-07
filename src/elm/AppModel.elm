@@ -1,5 +1,5 @@
 module AppModel exposing (..)
-
+import Browser
 import Browser.Navigation as Nav
 import Url
 import Router exposing(Route(..), routeParser, fromUrl)
